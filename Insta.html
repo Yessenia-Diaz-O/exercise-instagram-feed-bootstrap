@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec580dc211.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>TheInstagramPhotoFeed</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand -lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand">
+                    <i class="fab fa-instagram"></i>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjtjBw4xwF01ZdKL1cmnYZD3vdavlQPOWA7w&usqp=CAU"
+                        width="80" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                </a>
+
+                <div class="navbar-nav">
+
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#postmodal">Create a
+                        new
+                        post</button>
+
+                    <!-- modal -->
+                    <div class="modal fade" id="postmodal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <i class="fas fa-camera"></i> <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    </nav>
+    <!-- pills  -->
+
+
+
+
+
+    <!-- card -->
+    <div class="container">
+
+        <div class="row justify-content-center pt-5">
+            <div class="col-md-12">
+                <ul class="nav nav-pills my-4 justify-content-center " id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link " id="pills-home-tab" href="index.html"><i class="fas fa-th"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-profile-tab" href="Insta.html"><i
+                                class="fas fa-square"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <h4 class="card-title">My first photo</h4>
+                    <span>21/20</span>
+                    <img src="https://picsum.photos/id/1003/500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">25 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+
+
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                                <span class="card-text">Comment...</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="text-right bi bi-three-dots-vertical" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <h4 class="card-title">My first photo</h4>
+                    <span>21/20</span>
+                    <img src="https://picsum.photos/id/1006/500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">25 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                                <span class="card-text">Comment...</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="text-right bi bi-three-dots-vertical" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <h4 class="card-title">My first photo</h4>
+                    <span>21/20</span>
+                    <img src="https://picsum.photos/id/1012/500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">25 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                                <span class="card-text">Comment...</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="text-right bi bi-three-dots-vertical" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <h4 class="card-title">My first photo</h4>
+                    <span>21/20</span>
+                    <img src="https://picsum.photos/id/1013/500" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">25 Likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="row">
+                            <div class="col-md-6 text-left">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                                <span class="card-text">Comment...</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                    class="text-right bi bi-three-dots-vertical" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
